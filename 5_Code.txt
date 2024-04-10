@@ -77,6 +77,14 @@ class SignLanguageConverter:
         elif hand_landmarks.landmark[4].y < hand_landmarks.landmark[2].y and hand_landmarks.landmark[8].x > hand_landmarks.landmark[6].x and hand_landmarks.landmark[12].x < hand_landmarks.landmark[10].x and hand_landmarks.landmark[16].x < hand_landmarks.landmark[14].x and hand_landmarks.landmark[20].x < hand_landmarks.landmark[18].x:
             CountGesture.set('Right!')
             return "Right"
+        # Love
+        elif hand_landmarks.landmark[4].x > hand_landmarks.landmark[3].x and hand_landmarks.landmark[4].x > hand_landmarks.landmark[5].x and hand_landmarks.landmark[8].y < hand_landmarks.landmark[6].y and hand_landmarks.landmark[12].y > hand_landmarks.landmark[10].y and hand_landmarks.landmark[16].y > hand_landmarks.landmark[14].y and hand_landmarks.landmark[20].y < hand_landmarks.landmark[18].y:
+            CountGesture.set('I Love you!')
+            return "Love"
+        # Hi
+        elif hand_landmarks.landmark[4].x > hand_landmarks.landmark[5].x and hand_landmarks.landmark[8].x > hand_landmarks.landmark[12].x and hand_landmarks.landmark[12].x > hand_landmarks.landmark[16].x and hand_landmarks.landmark[16].x > hand_landmarks.landmark[20].x :
+            CountGesture.set('Hi!')
+            return "Hi"
         elif thumb_tip.y < index_finger_tip.y < middle_finger_tip.y < ring_finger_tip.y < little_finger_tip.y:
             CountGesture.set('I like it')
             return "Like"
