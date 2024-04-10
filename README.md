@@ -24,6 +24,7 @@ Follow these steps to set up the project on your local machine:
 1. Launch Jupyter Notebook from cmd --> `jupyter notebook`
 2. Open the project notebook (.ipynb file) in Jupyter Notebook.
 3. Run code cell in the notebook to run the project.
+4. the program should be running and ready to take your inputs, please refer to the 5_demo.mp4 to see how to use the GUI of the program
 
 ## Project Structure
 
