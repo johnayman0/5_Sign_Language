@@ -27,6 +27,6 @@ Follow these steps to set up the project on your local machine:
 
 ## Project Structure
 
-- `sign_language_recognition.ipynb`: Jupyter Notebook containing the main project code.
+- `Sign Language.ipynb`: Jupyter Notebook containing the main project code.
 - `README.md`: Documentation providing instructions and information about the project.
 - `requirements.txt`: List of required Python libraries for easy installation.
